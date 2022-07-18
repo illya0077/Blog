@@ -834,7 +834,9 @@
     }
     .menu{
         overflow: scroll;
-        display: flex;    
+        overflow-x: scroll;
+        display: flex;   
+        justify-content: start !important; 
         margin-left: -5px; 
         justify-content: center;  
         
@@ -872,7 +874,7 @@
   .slider{
     font-family: 'Open Sans', sans-serif;
     margin-top: 15%;
-    width: 350px;
+    width: 300px;
 
     h1{
         font-family: 'Quattrocento Sans', sans-serif;
