@@ -94,9 +94,6 @@
   display: flex;
   margin-left: 60px;
 }
-.menu .menu-home {
-  border: 2px solid rgb(35, 183, 163);
-}
 .menu a {
   text-decoration: none;
   margin: 0px 7px;
@@ -203,6 +200,14 @@
   .container {
     max-width: 720px;
   }
+  .row {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+  }
   .col-sm-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
@@ -261,9 +266,6 @@
   .menu {
     display: flex;
     margin-left: -5px;
-  }
-  .menu .menu-home {
-    border: 2px solid rgb(35, 183, 163);
   }
   .menu a {
     text-decoration: none;
@@ -343,6 +345,7 @@
     font-family: "Open Sans", sans-serif;
     margin-top: 20%;
     width: 600px;
+    height: 550px;
   }
   .slider h1 {
     font-family: "Quattrocento Sans", sans-serif;
@@ -373,10 +376,132 @@
     border: 2px solid white;
     background-color: rgba(35, 183, 164, 0);
   }
+  .section-title {
+    display: flex;
+    align-items: center;
+  }
+  .section-title .marker-tetle {
+    width: 10px;
+    height: 35px;
+    background-color: rgb(225, 230, 234);
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  .section-title h2 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 70px 0;
+    color: rgb(41, 47, 54);
+  }
+  .we-are-modest-left-block {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: rgb(141, 143, 146);
+    line-height: 1.5;
+    padding-bottom: 40px;
+  }
+  .we-are-modest-left-block span {
+    font-weight: bold;
+  }
+  .we-are-modest-right-block:last-child {
+    margin-bottom: 100px;
+  }
+  .icons-img {
+    background-color: rgb(208, 213, 217);
+    cursor: pointer;
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+  .icons-img:hover {
+    background-color: rgb(163, 169, 173);
+  }
+  .item {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .marker {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(35, 183, 164);
+    font-family: "Quattrocento Sans", sans-serif;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .item-tex {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(141, 143, 146);
+    font-style: 16px;
+    line-height: 1.5;
+    margin-left: 20px;
+  }
+  .item-tex h3 {
+    font-family: "Quattrocento Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(41, 47, 54);
+    padding-bottom: 10px;
+  }
+  .team-name {
+    margin-top: -3px;
+    font-family: "Open Sans", sans-serif;
+    width: 263px;
+    height: 73px;
+    padding: 20px;
+    background-color: rgb(225, 230, 234);
+    color: rgb(41, 47, 54);
+    font-style: 14px;
+    color: rgb(141, 143, 146);
+  }
+  .team-name h4 {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-style: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(41, 47, 54);
+  }
+  .revue {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  .revue > img {
+    width: 263px;
+  }
+  .revue:hover .revue-links {
+    opacity: 1;
+  }
+  .revue-links {
+    position: absolute;
+    text-align: center;
+    top: 120px;
+    right: 55px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .revue-links img {
+    background-color: rgb(58, 69, 67);
+  }
+  .revue-links img:hover {
+    background-color: rgb(109, 119, 117);
+  }
 }
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+  .row {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+    position: relative;
   }
   .col-md-1 {
     flex: 0 0 8.33333%;
@@ -434,9 +559,6 @@
   .menu {
     display: flex;
     margin-left: 0px;
-  }
-  .menu .menu-home {
-    border: 2px solid rgb(35, 183, 163);
   }
   .menu a {
     text-decoration: none;
@@ -514,7 +636,8 @@
   .slider {
     font-family: "Open Sans", sans-serif;
     width: 660px;
-    margin-top: 15%;
+    margin-top: 20%;
+    height: 490px;
   }
   .slider h1 {
     font-family: "Quattrocento Sans", sans-serif;
@@ -545,10 +668,133 @@
     border: 2px solid white;
     background-color: rgba(35, 183, 164, 0);
   }
+  .section-title {
+    display: flex;
+    align-items: center;
+  }
+  .section-title .marker-tetle {
+    width: 10px;
+    height: 35px;
+    background-color: rgb(225, 230, 234);
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  .section-title h2 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 70px 0;
+    color: rgb(41, 47, 54);
+  }
+  .we-are-modest-left-block {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: rgb(141, 143, 146);
+    line-height: 1.5;
+    padding-bottom: 40px;
+  }
+  .we-are-modest-left-block span {
+    font-weight: bold;
+  }
+  .icons-img {
+    background-color: rgb(208, 213, 217);
+    cursor: pointer;
+    margin-bottom: 100px;
+    margin-top: 20px;
+  }
+  .icons-img:hover {
+    background-color: rgb(163, 169, 173);
+  }
+  .item {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .marker {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(35, 183, 164);
+    font-family: "Quattrocento Sans", sans-serif;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .item-tex {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(141, 143, 146);
+    font-style: 16px;
+    line-height: 1.5;
+    margin-left: 20px;
+  }
+  .item-tex h3 {
+    font-family: "Quattrocento Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(41, 47, 54);
+    padding-bottom: 10px;
+  }
+  .team-name {
+    margin-top: -3px;
+    font-family: "Open Sans", sans-serif;
+    width: 220px;
+    height: 73px;
+    padding: 20px;
+    background-color: rgb(225, 230, 234);
+    color: rgb(41, 47, 54);
+    font-style: 14px;
+    color: rgb(141, 143, 146);
+  }
+  .team-name h4 {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-style: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(41, 47, 54);
+  }
+  .revue {
+    position: relative;
+    cursor: pointer;
+  }
+  .revue > img {
+    width: 220px;
+  }
+  .revue:hover .revue-links {
+    opacity: 1;
+  }
+  .revue-links {
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    right: 25px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .revue-links img {
+    background-color: rgb(58, 69, 67);
+  }
+  .revue-links img:hover {
+    background-color: rgb(109, 119, 117);
+  }
 }
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
+  }
+  .row {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: flex-start;
+  }
+  [class*=col-] {
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .col-lg-1 {
     flex: 0 0 8.33333%;
@@ -606,9 +852,6 @@
   .menu {
     display: flex;
     margin-left: 60px;
-  }
-  .menu .menu-home {
-    border: 2px solid rgb(35, 183, 163);
   }
   .menu a {
     text-decoration: none;
@@ -684,9 +927,10 @@
     width: 100%;
   }
   .slider {
-    margin-top: 15%;
+    margin-top: 33%;
     font-family: "Open Sans", sans-serif;
     width: 660px;
+    height: 490px;
   }
   .slider h1 {
     font-family: "Quattrocento Sans", sans-serif;
@@ -717,8 +961,137 @@
     border: 2px solid white;
     background-color: rgba(35, 183, 164, 0);
   }
+  .section-title {
+    display: flex;
+    align-items: center;
+  }
+  .section-title .marker-tetle {
+    width: 10px;
+    height: 35px;
+    background-color: rgb(225, 230, 234);
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  .section-title h2 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 70px 0;
+    color: rgb(41, 47, 54);
+  }
+  .we-are-modest-left-block {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: rgb(141, 143, 146);
+    line-height: 1.5;
+    padding-bottom: 40px;
+  }
+  .we-are-modest-left-block span {
+    font-weight: bold;
+  }
+  .icons-img {
+    background-color: rgb(208, 213, 217);
+    cursor: pointer;
+    margin-bottom: 100px;
+    margin-top: 20px;
+  }
+  .icons-img:hover {
+    background-color: rgb(163, 169, 173);
+  }
+  .item {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .marker {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(35, 183, 164);
+    font-family: "Quattrocento Sans", sans-serif;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .item-tex {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(141, 143, 146);
+    font-style: 16px;
+    line-height: 1.5;
+    margin-left: 20px;
+  }
+  .item-tex h3 {
+    font-family: "Quattrocento Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(41, 47, 54);
+    padding-bottom: 10px;
+  }
+  .team-name {
+    margin-top: -3px;
+    font-family: "Open Sans", sans-serif;
+    width: 263px;
+    height: 73px;
+    padding: 20px;
+    background-color: rgb(225, 230, 234);
+    color: rgb(41, 47, 54);
+    font-style: 14px;
+    color: rgb(141, 143, 146);
+  }
+  .team-name h4 {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-style: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(41, 47, 54);
+  }
+  .revue {
+    position: relative;
+    cursor: pointer;
+  }
+  .revue > img {
+    width: 263px;
+  }
+  .revue:hover .revue-links {
+    opacity: 1;
+  }
+  .revue-links {
+    position: absolute;
+    text-align: center;
+    top: 120px;
+    right: 55px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .revue-links img {
+    background-color: rgb(58, 69, 67);
+  }
+  .revue-links img:hover {
+    background-color: rgb(109, 119, 117);
+  }
 }
 @media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
+  .row {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+  }
+  [class*=col-] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .hidden-xs {
     display: none;
   }
@@ -787,9 +1160,6 @@
     margin-left: -5px;
     justify-content: center;
   }
-  .menu .menu-home {
-    border: 2px solid rgb(35, 183, 163);
-  }
   .menu a {
     text-decoration: none;
     margin: 0px 7px;
@@ -815,7 +1185,8 @@
   .slider {
     font-family: "Open Sans", sans-serif;
     margin-top: 15%;
-    width: 300px;
+    width: 70%;
+    height: 350px;
   }
   .slider h1 {
     font-family: "Quattrocento Sans", sans-serif;
@@ -834,7 +1205,7 @@
     width: 100px;
     height: 30px;
     line-height: 30px;
-    border-radius: 7px;
+    border-radius: 5px;
     border: 2px solid rgba(35, 183, 164, 0);
     margin-right: 10px;
     font-size: 12px;
@@ -845,5 +1216,117 @@
   .slider .btn-view-more:hover, .slider .btn-video-tour:hover {
     border: 2px solid white;
     background-color: rgba(35, 183, 164, 0);
+  }
+  .section-title {
+    display: flex;
+    align-items: center;
+  }
+  .section-title .marker-tetle {
+    width: 10px;
+    height: 35px;
+    background-color: rgb(225, 230, 234);
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  .section-title h2 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 30px 0;
+    color: rgb(41, 47, 54);
+  }
+  .we-are-modest-left-block {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: rgb(141, 143, 146);
+    line-height: 1.5;
+  }
+  .we-are-modest-left-block span {
+    font-weight: bold;
+  }
+  .icons-img {
+    width: 40px;
+    background-color: rgb(208, 213, 217);
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  .icons-img:hover {
+    background-color: rgb(163, 169, 173);
+  }
+  .item {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .marker {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(35, 183, 164);
+    font-family: "Quattrocento Sans", sans-serif;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .item-tex {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(141, 143, 146);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-left: 20px;
+  }
+  .item-tex h3 {
+    font-family: "Quattrocento Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(41, 47, 54);
+    padding-bottom: 10px;
+  }
+  .team-name {
+    margin-top: -3px;
+    font-family: "Open Sans", sans-serif;
+    width: 263px;
+    height: 73px;
+    padding: 20px;
+    background-color: rgb(225, 230, 234);
+    color: rgb(41, 47, 54);
+    font-style: 14px;
+    color: rgb(141, 143, 146);
+  }
+  .team-name h4 {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-style: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(41, 47, 54);
+  }
+  .revue {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+  .revue > img {
+    width: 263px;
+  }
+  .revue:hover .revue-links {
+    opacity: 1;
+  }
+  .revue-links {
+    position: absolute;
+    text-align: center;
+    top: 120px;
+    right: 55px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .revue-links img {
+    background-color: rgb(58, 69, 67);
+  }
+  .revue-links img:hover {
+    background-color: rgb(109, 119, 117);
   }
 }/*# sourceMappingURL=style.css.map */
