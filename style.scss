@@ -197,10 +197,30 @@
 
         } 
     }
- 
+    .btn-show-me-more{
+        position: absolute;
+        left: 50%;
+        margin-left: -75px;
+        text-transform: uppercase; 
+        width: 150px;
+        height: 45px;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(74, 107, 10, 0);
+        border: 2px solid white;
+        border-radius: 7px;
+        margin-top: 30px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgb(127, 129, 133);
+        }
+    }
 }
 /// * tablet => sm 768px* / ///////////////////////////////////////////////////////////
-@media (min-width:768px){
+@media (min-width:768px) and (max-width:991px){
     .container{
         max-width: 720px;
     }
@@ -267,7 +287,6 @@
     }
     .logo{
         margin-top: 6px;
-
     }
     .menu{
     
@@ -311,13 +330,11 @@
             font-weight: 600;
             color: rgb(164, 174, 173,);
             border: 0;
-            
             font-family: 'Open Sans', sans-serif;        
         }
     
         .search-input:focus-visible {
             outline: 0;
-            
         }
     
         ::placeholder{
@@ -389,6 +406,7 @@
             }
 
         } 
+        
     }
 
     
@@ -398,8 +416,6 @@
         display: flex;
         align-items: center;
         
-
-
         .marker-tetle{
             width: 10px;
             height: 35px;
@@ -433,7 +449,6 @@
                 margin-bottom: 100px;
             }
     
-
         .icons-img{
             background-color: rgb(208, 213, 217,);
             cursor: pointer;
@@ -443,20 +458,16 @@
             &:hover{
                 background-color: rgb(163, 169, 173);
             }
-
         }
-
 
         .item{
             display: flex;
             margin-bottom: 25px;          
-            
         }
         .marker{
             height: 50px;
             width: 50px;
             background-color: rgb(35, 183, 164);
-
             font-family: 'Quattrocento Sans', sans-serif;
             text-align: center;
             line-height: 50px;
@@ -471,7 +482,6 @@
             line-height: 1.5;
             margin-left: 20px;
 
-
             h3{
                 font-family: 'Quattrocento Sans', sans-serif;
                 text-transform: uppercase;
@@ -481,7 +491,6 @@
                 padding-bottom: 10px;
             }
         }
-
 
         .team-name{
             margin-top: -3px;
@@ -518,8 +527,6 @@
             }
         }
 
-        
-
         .revue-links{
 
             position: absolute;
@@ -528,7 +535,6 @@
             right: 55px;
             opacity: 0;
             transition: .5s;  
-           
 
             img{
                 background-color: rgb(58, 69, 67,);
@@ -537,11 +543,201 @@
                     background-color: rgb(109, 119, 117);
                 }
             }
-            
         }
+
+        .section-lovely-work{
+            background-color: rgb(58, 69, 77);
+            height: 1140px;
+        }
+
+        .section-title-grey-font {
+            display: flex;
+            align-items: center;
+            
+            .marker-tetle-grey-font{
+                width: 10px;
+                height: 35px;
+                background-color: rgb(78, 90, 98,);
+                margin-right: 10px;
+                padding-top: 10px;
+            }
+    
+            h2{
+                text-transform: uppercase;
+                font-family: 'Quattrocento Sans', sans-serif;
+                font-size: 36px;
+                font-weight: 600;
+                margin: 70px 0;
+                color: white;
+            }
+        }
+        
+        .section-lovely-work{
+            
+            .img-plus{
+                position: absolute;
+                top: 30%;
+                left: 40%;
+            }
+
+            .caption{
+                opacity: 0;
+                position: absolute;
+                width: 330px;
+                height: 60px;
+                background-color: rgb(41, 47, 54,);
+                text-transform: uppercase;
+                font-family: 'Quattrocento Sans', sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+                line-height: 60px;
+                padding-left: 15px;
+                margin-top: -51px;               
+            }
+
+            .img-plus{
+                opacity: 0;
+            }
+        
+            .photo{
+                cursor: pointer;
+                position: relative;     
+                margin-bottom: 30px;         
+
+                &:hover .caption{
+                    opacity: 1;
+                    transition: .6s;  
+                    transform: translateY(-20%);
+                }
+
+                &:hover .img-plus{
+                    opacity: 1;
+                }
+
+                .img-photo{
+                    width: 330px;
+                
+            }
+        }   
+    }   
+    
+    .col-sm-12-flex{
+        display: flex;
+        gap: 30px;
+    }
+
+    .btn-show-me-more{
+        position: absolute;
+        left: 50%;
+        margin-left: -75px;
+        text-transform: uppercase; 
+        width: 150px;
+        height: 45px;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(74, 107, 10, 0);
+        border: 2px solid white;
+        border-radius: 7px;
+        margin-top: 30px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgb(127, 129, 133);
+        }
+    }
+    
+    .section-what-we-do{
+        height: 1400px;
+    }
+
+    .advantage{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .advantage-title{
+        height: 20px;
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 17px;
+        font-weight: bold;
+        color: rgb(41, 47, 54,);
+        margin: 25px 0;
+    }
+
+    .advantage-text{
+        height: 150px;
+        font-family: 'Open Sans', sans-serif;   
+        font-style: 16px;
+        color: rgb(141, 143, 146,);
+        line-height: 1.5;
+    }
+    
+    
+    .section-features{
+        background-color: rgb(58, 69, 77);
+        height: 1600px;
+    }
+    .row-features{
+        display: flex;
+        flex-direction: column;
+        align-content: center; 
+    }
+    .section-title-grey-font {
+        display: flex;
+        align-items: center;
+            
+        .marker-tetle-grey-font{
+            width: 10px;
+            height: 35px;
+            background-color: rgb(78, 90, 98,);
+            margin-right: 10px;
+            padding-top: 10px;
+        }
+    
+        h2{
+            text-transform: uppercase;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin: 70px 0;
+            color: white;
+        }
+    }
+
+    .features-title{
+        width: 400px;
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        margin: 20px 0 10px;
+    }
+
+    .features-text{
+        width: 400px;
+        font-family: 'Open Sans', sans-serif;   
+        font-size: 16px;
+        color: white;
+        line-height: 1.2;
+        margin-bottom: 50px;
+        
+    }
+
+    .img-features{
+        width: 400px;
+    }
+
+    
 }
+
+
 /// * laptop => md * / ///////////////////////////////////////////////////////////
-@media (min-width:992px){
+@media (min-width:992px) and (max-width:1199px){
     .container{
         max-width: 960px;
     }
@@ -647,13 +843,11 @@
             font-weight: 600;
             color: rgb(164, 174, 173,);
             border: 0;
-            
             font-family: 'Open Sans', sans-serif;        
         }
     
         .search-input:focus-visible {
-            outline: 0;
-            
+            outline: 0;   
         }
     
         ::placeholder{
@@ -674,7 +868,6 @@
             background-position: center;  
             cursor: pointer; 
         }
-        
     }
 
     .main{
@@ -691,7 +884,6 @@
         margin-top: 20%;
         height: 490px;
 
-
         h1{
             font-family: 'Quattrocento Sans', sans-serif;
             font-size: 36px;
@@ -704,7 +896,6 @@
             color: rgb(204, 208, 215,); 
             margin: 25px 0;
             line-height: 1.8;
-
         }
 
         .btn-view-more, .btn-video-tour{
@@ -732,9 +923,7 @@
     .section-title {
         display: flex;
         align-items: center;
-        
-
-
+    
         .marker-tetle{
             width: 10px;
             height: 35px;
@@ -752,124 +941,298 @@
             color: rgb(41, 47, 54,);
         }
     }
-        .we-are-modest-left-block{
-            font-family: 'Open Sans', sans-serif;   
-            font-size: 16px;
-            color: rgb(141, 143, 146,);
-            line-height: 1.5;
-            padding-bottom: 40px;
+    
+    .we-are-modest-left-block{
+        font-family: 'Open Sans', sans-serif;   
+        font-size: 16px;
+        color: rgb(141, 143, 146,);
+        line-height: 1.5;
+        padding-bottom: 40px;
 
-            span{
-                font-weight: bold;
-            }
-        }
-
-        .icons-img{
-            background-color: rgb(208, 213, 217,);
-            cursor: pointer;
-            margin-bottom: 100px;
-            margin-top: 20px;
-
-            &:hover{
-                background-color: rgb(163, 169, 173);
-            }
-
-        }
-
-        .item{
-            display: flex;
-            margin-bottom: 25px;
-            
-        }
-        .marker{
-            height: 50px;
-            width: 50px;
-            background-color: rgb(35, 183, 164);
-
-            font-family: 'Quattrocento Sans', sans-serif;
-            text-align: center;
-            line-height: 50px;
-            color: white;
-            font-size: 20px;
+        span{
             font-weight: bold;
         }
-        .item-tex{
-            font-family: 'Open Sans', sans-serif;   
-            color: rgb(141, 143, 146,);
-            font-style: 16px;
-            line-height: 1.5;
-            margin-left: 20px;
+    }
 
+    .icons-img{
+        background-color: rgb(208, 213, 217,);
+        cursor: pointer;
+        margin-bottom: 100px;
+        margin-top: 20px;
 
-            h3{
-                font-family: 'Quattrocento Sans', sans-serif;
-                text-transform: uppercase;
-                font-size: 18px;
-                font-weight: bold;
-                color: rgb(41, 47, 54,);
-                padding-bottom: 10px;
-            }
+        &:hover{
+            background-color: rgb(163, 169, 173);
         }
+    }
 
+    .item{
+        display: flex;
+        margin-bottom: 25px; 
+    }
 
-        .team-name{
-            margin-top: -3px;
-            font-family: 'Open Sans', sans-serif;   
-            width: 220px;
-            height: 73px;
-            padding: 20px;
-            background-color: rgb(225, 230, 234,);
+    .marker{
+        height: 50px;
+        width: 50px;
+        background-color: rgb(35, 183, 164);
+        font-family: 'Quattrocento Sans', sans-serif;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .item-tex{
+        font-family: 'Open Sans', sans-serif;   
+        color: rgb(141, 143, 146,);
+        font-style: 16px;
+        line-height: 1.5;
+        margin-left: 20px;
+
+        h3{
+            font-family: 'Quattrocento Sans', sans-serif;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: bold;
             color: rgb(41, 47, 54,);
-            font-style: 14px;
-            color: rgb(141, 143, 146,);
+            padding-bottom: 10px;
+        }
+    }
 
-            h4{
-                font-family: 'Quattrocento Sans', sans-serif;
-                font-style: 16px;
-                text-transform: uppercase;
-                font-weight: bold;
-                margin-bottom: 5px;
-                color: rgb(41, 47, 54,);
-            }
+
+    .section-meet-the-team{
+        height: 600px;
+    }
+    
+    .team-name{
+        margin-top: -3px;
+        font-family: 'Open Sans', sans-serif;   
+        width: 220px;
+        height: 73px;
+        padding: 20px;
+        background-color: rgb(225, 230, 234,);
+        color: rgb(41, 47, 54,);
+        font-style: 14px;
+        color: rgb(141, 143, 146,);
+
+        h4{
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-style: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: rgb(41, 47, 54,);
+        }
+    }
+
+    .revue{
+        position: relative;
+        cursor: pointer;
+
+        > img{
+            width: 220px;
         }
 
-        .revue{
-            position: relative;
-            cursor: pointer;
+        &:hover .revue-links{
+            opacity: 1;
+        }
+    }       
 
-            > img{
-                width: 220px;
-            }
+    .revue-links{
 
-            &:hover .revue-links{
-                opacity: 1;
+        position: absolute;
+        text-align: center;
+        top: 100px;
+        right: 25px;
+        opacity: 0;
+        transition: .5s;  
+           
+        img{
+            background-color: rgb(58, 69, 67,);
+
+            &:hover{
+                background-color: rgb(109, 119, 117);
             }
         }
+    }
+
 
         
+    .section-lovely-work{
+        background-color: rgb(58, 69, 77);
+        height: 900px;
+    }
 
-        .revue-links{
-
-            position: absolute;
-            text-align: center;
-            top: 100px;
-            right: 25px;
-            opacity: 0;
-            transition: .5s;  
-           
-
-            img{
-                background-color: rgb(58, 69, 67,);
-
-                &:hover{
-                    background-color: rgb(109, 119, 117);
-                }
-            }
+    .section-title-grey-font {
+        display: flex;
+        align-items: center;
             
+        .marker-tetle-grey-font{
+            width: 10px;
+            height: 35px;
+            background-color: rgb(78, 90, 98,);
+            margin-right: 10px;
+            padding-top: 10px;
+        }
+    
+        h2{
+            text-transform: uppercase;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin: 70px 0;
+            color: white;
+        }
+    }
+        
+    .section-lovely-work{
+            
+        .img-plus{
+            position: absolute;
+            top: 25%;
+            left: 40%;
         }
 
+        .caption{
+            opacity: 0;
+            position: absolute;
+            width: 290px;
+            height: 40px;
+            background-color: rgb(41, 47, 54,);
+            text-transform: uppercase;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            line-height: 40px;
+            padding-left: 15px;
+            margin-top: -35px;               
+        }
 
+        .img-plus{
+            opacity: 0;
+        }
+        
+        .photo{
+            cursor: pointer;
+            position: relative;     
+            margin-bottom: 30px;         
+
+            &:hover .caption{
+                opacity: 1;
+                transition: .6s;  
+                transform: translateY(-20%);
+            }
+
+            &:hover .img-plus{
+                opacity: 1;
+            }
+
+            .img-photo{
+                width: 290px;
+            }   
+        }  
+        
+    }
+
+    .btn-show-me-more{
+        position: absolute;
+        left: 50%;
+        margin-left: -75px;
+        text-transform: uppercase; 
+        width: 150px;
+        height: 45px;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(74, 107, 10, 0);
+        border: 2px solid white;
+        border-radius: 7px;
+        margin-top: 30px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgb(127, 129, 133);
+        }
+    }
+
+    .section-what-we-do{
+        height: 900px;
+    }
+
+    .advantage{
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .advantage-title{
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 17px;
+        font-weight: bold;
+        color: rgb(41, 47, 54,);
+        margin: 25px 0;
+    }
+
+    .advantage-text{
+        font-family: 'Open Sans', sans-serif;   
+        font-style: 16px;
+        color: rgb(141, 143, 146,);
+        line-height: 1.8;
+    }
+
+
+    .section-features{
+        background-color: rgb(58, 69, 77);
+        height: 730px;
+    }
+
+    .section-title-grey-font {
+        display: flex;
+        align-items: center;
+            
+        .marker-tetle-grey-font{
+            width: 10px;
+            height: 35px;
+            background-color: rgb(78, 90, 98,);
+            margin-right: 10px;
+            padding-top: 10px;
+        }
+    
+        h2{
+            text-transform: uppercase;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin: 70px 0;
+            color: white;
+        }
+    }
+
+    .features-title{
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        margin: 40px 0 20px;
+    }
+
+    .features-text{
+        font-family: 'Open Sans', sans-serif;   
+        font-size: 16px;
+        color: white;
+        line-height: 1.8;
+
+    }
+
+    .img-features{
+        width: 290px;
+    }
 }
+
+
 
 /// * desktop => lg * / ///////////////////////////////////////////////////////////
 @media (min-width:1200px){
@@ -882,7 +1245,7 @@
         margin-right: -15px;
         flex-wrap: wrap;
         position: relative;
-        justify-content: flex-start
+        
     }
     [class*="col-"] {
         padding-left: 15px;
@@ -1064,6 +1427,10 @@
         } 
     }
 
+    .section-meet-the-team{
+        height: 650px;
+    }
+
     .section-title {
         display: flex;
         align-items: center;
@@ -1108,19 +1475,17 @@
             &:hover{
                 background-color: rgb(163, 169, 173);
             }
-
         }
 
         .item{
             display: flex;
             margin-bottom: 25px;
-            
         }
+
         .marker{
             height: 50px;
             width: 50px;
             background-color: rgb(35, 183, 164);
-
             font-family: 'Quattrocento Sans', sans-serif;
             text-align: center;
             line-height: 50px;
@@ -1135,7 +1500,6 @@
             line-height: 1.5;
             margin-left: 20px;
 
-
             h3{
                 font-family: 'Quattrocento Sans', sans-serif;
                 text-transform: uppercase;
@@ -1145,7 +1509,6 @@
                 padding-bottom: 10px;
             }
         }
-
 
         .team-name{
             margin-top: -3px;
@@ -1181,17 +1544,13 @@
             }
         }
 
-        
-
         .revue-links{
-
             position: absolute;
             text-align: center;
             top: 120px;
             right: 55px;
             opacity: 0;
             transition: .5s;  
-           
 
             img{
                 background-color: rgb(58, 69, 67,);
@@ -1200,14 +1559,184 @@
                     background-color: rgb(109, 119, 117);
                 }
             }
-            
         }
 
+        .section-lovely-work{
+            background-color: rgb(58, 69, 77);
+            height: 900px;
+        }
 
+        .section-title-grey-font {
+            display: flex;
+            align-items: center;
+            
+            .marker-tetle-grey-font{
+                width: 10px;
+                height: 35px;
+                background-color: rgb(78, 90, 98,);
+                margin-right: 10px;
+                padding-top: 10px;
+            }
+    
+            h2{
+                text-transform: uppercase;
+                font-family: 'Quattrocento Sans', sans-serif;
+                font-size: 36px;
+                font-weight: 600;
+                margin: 70px 0;
+                color: white;
+            }
+        }
+        
+        .section-lovely-work{
+            
+            .img-plus{
+                position: absolute;
+                top: 30%;
+                left: 42%;
+            }
+
+            .caption{
+                opacity: 0;
+                position: absolute;
+                width: 360px;
+                height: 60px;
+                background-color: rgb(41, 47, 54,);
+                text-transform: uppercase;
+                font-family: 'Quattrocento Sans', sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+                line-height: 60px;
+                padding-left: 15px;
+                margin-top: -51px;               
+            }
+
+            .img-plus{
+                opacity: 0;
+            }
+        
+            .photo{
+                cursor: pointer;
+                position: relative;     
+                margin-bottom: 30px;         
+
+                &:hover .caption{
+                    opacity: 1;
+                    transition: .6s;  
+                    transform: translateY(-20%);
+                }
+
+                &:hover .img-plus{
+                    opacity: 1;
+                }
+
+                .img-photo{
+                    width: 360px;
+            }
+            
+        }
+    }
+
+    .btn-show-me-more{
+        position: absolute;
+        left: 50%;
+        margin-left: -75px;
+        text-transform: uppercase; 
+        width: 150px;
+        height: 45px;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(74, 107, 10, 0);
+        border: 2px solid white;
+        border-radius: 7px;
+        margin-top: 30px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgb(127, 129, 133);
+        }
+    }
+
+
+    .section-what-we-do{
+        height: 900px;
+    }
+
+    .advantage{
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .advantage-title{
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 17px;
+        font-weight: bold;
+        color: rgb(41, 47, 54,);
+        margin: 25px 0;
+    }
+
+    .advantage-text{
+        font-family: 'Open Sans', sans-serif;   
+        font-size: 16px;
+        color: rgb(141, 143, 146,);
+        line-height: 1.8;
+    }
+
+
+
+
+    .section-features{
+        background-color: rgb(58, 69, 77);
+        height: 730px;
+    }
+
+    .section-title-grey-font {
+        display: flex;
+        align-items: center;
+            
+        .marker-tetle-grey-font{
+            width: 10px;
+            height: 35px;
+            background-color: rgb(78, 90, 98,);
+            margin-right: 10px;
+            padding-top: 10px;
+        }
+    
+        h2{
+            text-transform: uppercase;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin: 70px 0;
+            color: white;
+        }
+    }
+
+    .features-title{
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        margin: 40px 0 20px;
+    }
+
+    .features-text{
+        font-family: 'Open Sans', sans-serif;   
+        font-size: 16px;
+        color: white;
+        line-height: 1.8;
+
+    }
+    
 }
 
 /// * only mobile <767px* / ///////////////////////////////////////////////////////////
-@media (max-width:767px){
+@media (min-width:0px) and (max-width:767px){
     
     .container{
         width: 100%;
@@ -1215,7 +1744,7 @@
         padding-right: 15px;
         margin: 0 auto;
     }
-
+    
     .row{
         display: flex;
         margin-left: -15px;
@@ -1223,12 +1752,12 @@
         flex-wrap: wrap;
         position: relative;
         justify-content: center;
-
     }
+        
     [class*="col-"] {
         padding-left: 15px;
         padding-right: 15px;
-        
+            
     }
     .hidden-xs{
         display: none;
@@ -1290,9 +1819,8 @@
     .logo{
         height: 25px;
         text-align: center;
-        
-
     }
+
     .menu{
         overflow: scroll;
         overflow-x: scroll;
@@ -1300,7 +1828,7 @@
         justify-content: start !important; 
         margin-left: -5px; 
         justify-content: center;  
-        
+            
         a{
             text-decoration: none;
             margin: 0px 7px;
@@ -1311,7 +1839,7 @@
             color: rgb(164, 174, 173,);
             border: 2px solid rgb(86, 92, 100, 0);   
             font-family: 'Open Sans', sans-serif;
-    
+        
             &:hover{
                 border: 2px solid rgb(86, 92, 100,);   
             }
@@ -1325,7 +1853,7 @@
         background-repeat: no-repeat;
         height: 660px;
         width: 100%;
-  }
+    } 
 
     .slider{
         font-family: 'Open Sans', sans-serif;
@@ -1333,47 +1861,45 @@
         width: 70%;
         height: 350px;
 
-    h1{
-        font-family: 'Quattrocento Sans', sans-serif;
-        font-size: 18px;
-        color: rgb(255, 229, 229,); 
-        font-weight: 600;
-    }
-
-    p{
-        font-size: 14px;
-        color: rgb(204, 208, 215,); 
-        margin: 25px 0;
-        line-height: 1.8;
-
-    }
-
-    .btn-view-more, .btn-video-tour{
-        font-family: 'Quattrocento Sans', sans-serif;
-        width: 100px;
-        height: 30px;
-        line-height: 30px;
-        border-radius: 5px;
-        border: 2px solid rgb(35, 183, 164, 0);             
-        margin-right: 10px;
-        font-size: 12px;
-        color: white;
-        background-color: rgb(35, 183, 164);
-        cursor: pointer; 
-
-        &:hover{
-            border: 2px solid white;  
-            background-color: rgb(35, 183, 164, 0); 
+        h1{
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 18px;
+            color: rgb(255, 229, 229,); 
+            font-weight: 600;
         }
 
+        p{
+            font-size: 14px;
+            color: rgb(204, 208, 215,); 
+            margin: 25px 0;
+            line-height: 1.8;
+        }
+
+        .btn-view-more, .btn-video-tour{
+            font-family: 'Quattrocento Sans', sans-serif;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 5px;
+            border: 2px solid rgb(35, 183, 164, 0);             
+            margin-right: 10px;
+            font-size: 12px;
+            color: white;
+            background-color: rgb(35, 183, 164);
+            cursor: pointer; 
+
+            &:hover{
+                border: 2px solid white;  
+                background-color: rgb(35, 183, 164, 0); 
+            }
         } 
-    }
+    }   
+        
     .section-title {
         display: flex;
         align-items: center;
-        
-
-
+        justify-content: flex-start;
+            
         .marker-tetle{
             width: 10px;
             height: 35px;
@@ -1391,120 +1917,301 @@
             color: rgb(41, 47, 54,);
         }
     }
-        .we-are-modest-left-block{
-            font-family: 'Open Sans', sans-serif;   
-            font-size: 14px;
-            color: rgb(141, 143, 146,);
-            line-height: 1.5;
 
-            span{
-                font-weight: bold;
-            }
-        }
+    .we-are-modest-left-block{
+        font-family: 'Open Sans', sans-serif;   
+        font-size: 14px;
+        color: rgb(141, 143, 146,);
+        line-height: 1.5;
 
-        .icons-img{
-            width: 40px;
-            background-color: rgb(208, 213, 217,);
-            cursor: pointer;
-            margin-bottom: 50px;
-            margin-top: 20px;
-
-            &:hover{
-                background-color: rgb(163, 169, 173);
-            }
-
-        }
-
-        .item{
-            display: flex;
-            margin-bottom: 25px;
-            
-        }
-        .marker{
-            height: 40px;
-            width: 40px;
-            background-color: rgb(35, 183, 164);
-
-            font-family: 'Quattrocento Sans', sans-serif;
-            text-align: center;
-            line-height: 40px;
-            color: white;
-            font-size: 16px;
+        span{
             font-weight: bold;
         }
-        .item-tex{
-            font-family: 'Open Sans', sans-serif;   
-            color: rgb(141, 143, 146,);
-            font-size: 14px;
-            line-height: 1.5;
-            margin-left: 20px;
+    }
 
+    .icons-img{
+        width: 40px;
+        background-color: rgb(208, 213, 217,);
+        cursor: pointer;
+        margin-bottom: 50px;
+        margin-top: 20px;
 
-            h3{
-                font-family: 'Quattrocento Sans', sans-serif;
-                text-transform: uppercase;
-                font-size: 16px;
-                font-weight: bold;
-                color: rgb(41, 47, 54,);
-                padding-bottom: 10px;
-            }
+        &:hover{
+            background-color: rgb(163, 169, 173);
         }
+    }
 
+    .item{
+        display: flex;
+        margin-bottom: 25px;  
+    }
 
-        .team-name{
-            margin-top: -3px;
-            font-family: 'Open Sans', sans-serif;   
-            width: 263px;
-            height: 73px;
-            padding: 20px;
-            background-color: rgb(225, 230, 234,);
+    .marker{
+        height: 40px;
+        width: 40px;
+        background-color: rgb(35, 183, 164);
+        font-family: 'Quattrocento Sans', sans-serif;
+        text-align: center;
+        line-height: 40px;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .item-tex{
+        font-family: 'Open Sans', sans-serif;   
+        color: rgb(141, 143, 146,);
+        font-size: 14px;
+        line-height: 1.5;
+        margin-left: 20px;
+
+        h3{
+            font-family: 'Quattrocento Sans', sans-serif;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: bold;
             color: rgb(41, 47, 54,);
-            font-style: 14px;
-            color: rgb(141, 143, 146,);
+            padding-bottom: 10px;
+        }
+    }
 
-            h4{
-                font-family: 'Quattrocento Sans', sans-serif;
-                font-style: 16px;
-                text-transform: uppercase;
-                font-weight: bold;
-                margin-bottom: 5px;
-                color: rgb(41, 47, 54,);
-            }
+    .team-name{
+        margin-top: -3px;
+        font-family: 'Open Sans', sans-serif;   
+        width: 263px;
+        height: 73px;
+        padding: 20px;
+        background-color: rgb(225, 230, 234,);
+        color: rgb(41, 47, 54,);
+        font-style: 14px;
+        color: rgb(141, 143, 146,);
+
+        h4{
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-style: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: rgb(41, 47, 54,);
+        }
+    }
+
+    .revue{
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 40px;
+
+        > img{
+            width: 263px;
         }
 
-        .revue{
-            position: relative;
-            cursor: pointer;
-            margin-bottom: 40px;
-
-            > img{
-                width: 263px;
-            }
-
-            &:hover .revue-links{
-                opacity: 1;
-            }
+        &:hover .revue-links{
+            opacity: 1;
         }
+    }
 
         
 
-        .revue-links{
+    .revue-links{
 
-            position: absolute;
-            text-align: center;
-            top: 120px;
-            right: 55px;
-            opacity: 0;
-            transition: .5s;  
-           
+        position: absolute;
+        text-align: center;
+        top: 120px;
+        right: 55px;
+        opacity: 0;
+        transition: .5s;  
 
-            img{
-                background-color: rgb(58, 69, 67,);
+        img{
+            background-color: rgb(58, 69, 67,);
 
-                &:hover{
-                    background-color: rgb(109, 119, 117);
-                }
+            &:hover{
+                background-color: rgb(109, 119, 117);
             }
+        }    
+    }
+    .section-lovely-work{
+        background-color: rgb(58, 69, 77);
+        height: 1800px;
+    }
+
+    .section-title-grey-font {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+        .marker-tetle-grey-font{
+            width: 10px;
+            height: 35px;
+            background-color: rgb(78, 90, 98,);
+            margin-right: 10px;
+            padding-top: 10px;
+        }
+
+        h2{
+            text-transform: uppercase;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 70px 0;
+            color: white;
+        }
+    }
+    
+
+    .row-lovely-work{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+
+    }
+    .section-lovely-work{
+        
+        .img-plus{
+            position: absolute;
+            top: 25%;
+            left: 40%;
+        }
+
+        .caption{
+            opacity: 0;
+            position: absolute;
+            width: 290px;
+            height: 40px;
+            background-color: rgb(41, 47, 54,);
+            text-transform: uppercase;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            line-height: 40px;
+            padding-left: 15px;
+            margin-top: -35px;               
+        }
+
+        .img-plus{
+            opacity: 0;
+        }
+    
+        .photo{
+            cursor: pointer;
+            position: relative;     
+            margin-bottom: 30px;         
+
+            &:hover .caption{
+                opacity: 1;
+                transition: .6s;  
+                transform: translateY(-20%);
+            }
+
+            &:hover .img-plus{
+                opacity: 1;
+            }
+
+            .img-photo{
+                width: 290px;
             
         }
+        
+    }
+}
+    .btn-show-me-more{
+        position: absolute;
+        left: 50%;
+        margin-left: -75px;
+        text-transform: uppercase; 
+        width: 150px;
+        height: 45px;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(74, 107, 10, 0);
+        border: 2px solid white;
+        border-radius: 7px;
+        margin-top: 30px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgb(127, 129, 133);
+        }
+    }
+
+    .section-what-we-do{
+        height: 2300px;
+    }
+
+    .advantage{
+        text-align: center;
+        
+    }
+
+    .advantage-title{
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 17px;
+        font-weight: bold;
+        color: rgb(41, 47, 54,);
+        margin: 25px 0;
+        height: 20px;
+    }
+
+    .advantage-text{
+        font-family: 'Open Sans', sans-serif;   
+        font-style: 16px;
+        color: rgb(141, 143, 146,);
+        line-height: 1.5;
+        height: 150px;
+    }
+
+    .section-features{
+        background-color: rgb(58, 69, 77);
+        height: 1600px;
+    }
+
+    .row-features{
+        display: flex;
+        flex-direction: column;
+        align-content: center; 
+    }
+    
+    .section-title-grey-font {
+        display: flex;
+        align-items: center;
+            
+        .marker-tetle-grey-font{
+            width: 10px;
+            height: 35px;
+            background-color: rgb(78, 90, 98,);
+            margin-right: 10px;
+            padding-top: 10px;
+        }
+    
+        h2{
+            text-transform: uppercase;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin: 70px 0;
+            color: white;
+        }
+    }
+
+    .features-title{
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        margin: 20px 0 10px;
+    }
+
+    .features-text{
+        font-family: 'Open Sans', sans-serif;   
+        font-size: 16px;
+        color: white;
+        line-height: 1.2;
+        width: 360px;
+        margin-bottom: 60px;
+    }
 }

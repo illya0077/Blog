@@ -195,8 +195,28 @@
   border: 2px solid white;
   background-color: rgba(35, 183, 164, 0);
 }
+.search .btn-show-me-more {
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  text-transform: uppercase;
+  width: 150px;
+  height: 45px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(74, 107, 10, 0);
+  border: 2px solid white;
+  border-radius: 7px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.search .btn-show-me-more:hover {
+  background-color: rgb(127, 129, 133);
+}
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .container {
     max-width: 720px;
   }
@@ -491,8 +511,165 @@
   .revue-links img:hover {
     background-color: rgb(109, 119, 117);
   }
+  .section-lovely-work {
+    background-color: rgb(58, 69, 77);
+    height: 1140px;
+  }
+  .section-title-grey-font {
+    display: flex;
+    align-items: center;
+  }
+  .section-title-grey-font .marker-tetle-grey-font {
+    width: 10px;
+    height: 35px;
+    background-color: rgb(78, 90, 98);
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  .section-title-grey-font h2 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 70px 0;
+    color: white;
+  }
+  .section-lovely-work .img-plus {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+  }
+  .section-lovely-work .caption {
+    opacity: 0;
+    position: absolute;
+    width: 330px;
+    height: 60px;
+    background-color: rgb(41, 47, 54);
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    line-height: 60px;
+    padding-left: 15px;
+    margin-top: -51px;
+  }
+  .section-lovely-work .img-plus {
+    opacity: 0;
+  }
+  .section-lovely-work .photo {
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .section-lovely-work .photo:hover .caption {
+    opacity: 1;
+    transition: 0.6s;
+    transform: translateY(-20%);
+  }
+  .section-lovely-work .photo:hover .img-plus {
+    opacity: 1;
+  }
+  .section-lovely-work .photo .img-photo {
+    width: 330px;
+  }
+  .col-sm-12-flex {
+    display: flex;
+    gap: 30px;
+  }
+  .btn-show-me-more {
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    text-transform: uppercase;
+    width: 150px;
+    height: 45px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(74, 107, 10, 0);
+    border: 2px solid white;
+    border-radius: 7px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .btn-show-me-more:hover {
+    background-color: rgb(127, 129, 133);
+  }
+  .section-what-we-do {
+    height: 1400px;
+  }
+  .advantage {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .advantage-title {
+    height: 20px;
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(41, 47, 54);
+    margin: 25px 0;
+  }
+  .advantage-text {
+    height: 150px;
+    font-family: "Open Sans", sans-serif;
+    font-style: 16px;
+    color: rgb(141, 143, 146);
+    line-height: 1.5;
+  }
+  .section-features {
+    background-color: rgb(58, 69, 77);
+    height: 1600px;
+  }
+  .row-features {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .section-title-grey-font {
+    display: flex;
+    align-items: center;
+  }
+  .section-title-grey-font .marker-tetle-grey-font {
+    width: 10px;
+    height: 35px;
+    background-color: rgb(78, 90, 98);
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  .section-title-grey-font h2 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 70px 0;
+    color: white;
+  }
+  .features-title {
+    width: 400px;
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 20px 0 10px;
+  }
+  .features-text {
+    width: 400px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+  .img-features {
+    width: 400px;
+  }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .container {
     max-width: 960px;
   }
@@ -736,6 +913,9 @@
     color: rgb(41, 47, 54);
     padding-bottom: 10px;
   }
+  .section-meet-the-team {
+    height: 600px;
+  }
   .team-name {
     margin-top: -3px;
     font-family: "Open Sans", sans-serif;
@@ -779,6 +959,149 @@
   .revue-links img:hover {
     background-color: rgb(109, 119, 117);
   }
+  .section-lovely-work {
+    background-color: rgb(58, 69, 77);
+    height: 900px;
+  }
+  .section-title-grey-font {
+    display: flex;
+    align-items: center;
+  }
+  .section-title-grey-font .marker-tetle-grey-font {
+    width: 10px;
+    height: 35px;
+    background-color: rgb(78, 90, 98);
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  .section-title-grey-font h2 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 70px 0;
+    color: white;
+  }
+  .section-lovely-work .img-plus {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+  }
+  .section-lovely-work .caption {
+    opacity: 0;
+    position: absolute;
+    width: 290px;
+    height: 40px;
+    background-color: rgb(41, 47, 54);
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    line-height: 40px;
+    padding-left: 15px;
+    margin-top: -35px;
+  }
+  .section-lovely-work .img-plus {
+    opacity: 0;
+  }
+  .section-lovely-work .photo {
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .section-lovely-work .photo:hover .caption {
+    opacity: 1;
+    transition: 0.6s;
+    transform: translateY(-20%);
+  }
+  .section-lovely-work .photo:hover .img-plus {
+    opacity: 1;
+  }
+  .section-lovely-work .photo .img-photo {
+    width: 290px;
+  }
+  .btn-show-me-more {
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    text-transform: uppercase;
+    width: 150px;
+    height: 45px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(74, 107, 10, 0);
+    border: 2px solid white;
+    border-radius: 7px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .btn-show-me-more:hover {
+    background-color: rgb(127, 129, 133);
+  }
+  .section-what-we-do {
+    height: 900px;
+  }
+  .advantage {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .advantage-title {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(41, 47, 54);
+    margin: 25px 0;
+  }
+  .advantage-text {
+    font-family: "Open Sans", sans-serif;
+    font-style: 16px;
+    color: rgb(141, 143, 146);
+    line-height: 1.8;
+  }
+  .section-features {
+    background-color: rgb(58, 69, 77);
+    height: 730px;
+  }
+  .section-title-grey-font {
+    display: flex;
+    align-items: center;
+  }
+  .section-title-grey-font .marker-tetle-grey-font {
+    width: 10px;
+    height: 35px;
+    background-color: rgb(78, 90, 98);
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  .section-title-grey-font h2 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 70px 0;
+    color: white;
+  }
+  .features-title {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 40px 0 20px;
+  }
+  .features-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 1.8;
+  }
+  .img-features {
+    width: 290px;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -790,7 +1113,6 @@
     margin-right: -15px;
     flex-wrap: wrap;
     position: relative;
-    justify-content: flex-start;
   }
   [class*=col-] {
     padding-left: 15px;
@@ -961,6 +1283,9 @@
     border: 2px solid white;
     background-color: rgba(35, 183, 164, 0);
   }
+  .section-meet-the-team {
+    height: 650px;
+  }
   .section-title {
     display: flex;
     align-items: center;
@@ -1072,8 +1397,148 @@
   .revue-links img:hover {
     background-color: rgb(109, 119, 117);
   }
+  .section-lovely-work {
+    background-color: rgb(58, 69, 77);
+    height: 900px;
+  }
+  .section-title-grey-font {
+    display: flex;
+    align-items: center;
+  }
+  .section-title-grey-font .marker-tetle-grey-font {
+    width: 10px;
+    height: 35px;
+    background-color: rgb(78, 90, 98);
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  .section-title-grey-font h2 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 70px 0;
+    color: white;
+  }
+  .section-lovely-work .img-plus {
+    position: absolute;
+    top: 30%;
+    left: 42%;
+  }
+  .section-lovely-work .caption {
+    opacity: 0;
+    position: absolute;
+    width: 360px;
+    height: 60px;
+    background-color: rgb(41, 47, 54);
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    line-height: 60px;
+    padding-left: 15px;
+    margin-top: -51px;
+  }
+  .section-lovely-work .img-plus {
+    opacity: 0;
+  }
+  .section-lovely-work .photo {
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .section-lovely-work .photo:hover .caption {
+    opacity: 1;
+    transition: 0.6s;
+    transform: translateY(-20%);
+  }
+  .section-lovely-work .photo:hover .img-plus {
+    opacity: 1;
+  }
+  .section-lovely-work .photo .img-photo {
+    width: 360px;
+  }
+  .btn-show-me-more {
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    text-transform: uppercase;
+    width: 150px;
+    height: 45px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(74, 107, 10, 0);
+    border: 2px solid white;
+    border-radius: 7px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .btn-show-me-more:hover {
+    background-color: rgb(127, 129, 133);
+  }
+  .section-what-we-do {
+    height: 900px;
+  }
+  .advantage {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .advantage-title {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(41, 47, 54);
+    margin: 25px 0;
+  }
+  .advantage-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: rgb(141, 143, 146);
+    line-height: 1.8;
+  }
+  .section-features {
+    background-color: rgb(58, 69, 77);
+    height: 730px;
+  }
+  .section-title-grey-font {
+    display: flex;
+    align-items: center;
+  }
+  .section-title-grey-font .marker-tetle-grey-font {
+    width: 10px;
+    height: 35px;
+    background-color: rgb(78, 90, 98);
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  .section-title-grey-font h2 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 70px 0;
+    color: white;
+  }
+  .features-title {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 40px 0 20px;
+  }
+  .features-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 1.8;
+  }
 }
-@media (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .container {
     width: 100%;
     padding-left: 15px;
@@ -1220,6 +1685,7 @@
   .section-title {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
   }
   .section-title .marker-tetle {
     width: 10px;
@@ -1328,5 +1794,160 @@
   }
   .revue-links img:hover {
     background-color: rgb(109, 119, 117);
+  }
+  .section-lovely-work {
+    background-color: rgb(58, 69, 77);
+    height: 1800px;
+  }
+  .section-title-grey-font {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .section-title-grey-font .marker-tetle-grey-font {
+    width: 10px;
+    height: 35px;
+    background-color: rgb(78, 90, 98);
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  .section-title-grey-font h2 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 70px 0;
+    color: white;
+  }
+  .row-lovely-work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .section-lovely-work .img-plus {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+  }
+  .section-lovely-work .caption {
+    opacity: 0;
+    position: absolute;
+    width: 290px;
+    height: 40px;
+    background-color: rgb(41, 47, 54);
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    line-height: 40px;
+    padding-left: 15px;
+    margin-top: -35px;
+  }
+  .section-lovely-work .img-plus {
+    opacity: 0;
+  }
+  .section-lovely-work .photo {
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .section-lovely-work .photo:hover .caption {
+    opacity: 1;
+    transition: 0.6s;
+    transform: translateY(-20%);
+  }
+  .section-lovely-work .photo:hover .img-plus {
+    opacity: 1;
+  }
+  .section-lovely-work .photo .img-photo {
+    width: 290px;
+  }
+  .btn-show-me-more {
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    text-transform: uppercase;
+    width: 150px;
+    height: 45px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(74, 107, 10, 0);
+    border: 2px solid white;
+    border-radius: 7px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .btn-show-me-more:hover {
+    background-color: rgb(127, 129, 133);
+  }
+  .section-what-we-do {
+    height: 2300px;
+  }
+  .advantage {
+    text-align: center;
+  }
+  .advantage-title {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(41, 47, 54);
+    margin: 25px 0;
+    height: 20px;
+  }
+  .advantage-text {
+    font-family: "Open Sans", sans-serif;
+    font-style: 16px;
+    color: rgb(141, 143, 146);
+    line-height: 1.5;
+    height: 150px;
+  }
+  .section-features {
+    background-color: rgb(58, 69, 77);
+    height: 1600px;
+  }
+  .row-features {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .section-title-grey-font {
+    display: flex;
+    align-items: center;
+  }
+  .section-title-grey-font .marker-tetle-grey-font {
+    width: 10px;
+    height: 35px;
+    background-color: rgb(78, 90, 98);
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+  .section-title-grey-font h2 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 70px 0;
+    color: white;
+  }
+  .features-title {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 20px 0 10px;
+  }
+  .features-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 1.2;
+    width: 360px;
+    margin-bottom: 60px;
   }
 }/*# sourceMappingURL=style.css.map */
