@@ -1627,7 +1627,7 @@
   .section-lovely-work .photo {
     cursor: pointer;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
   }
   .section-lovely-work .photo:hover .caption {
     opacity: 1;
