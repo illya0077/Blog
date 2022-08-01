@@ -158,9 +158,9 @@
     }
 
     .slider{
-        font-family: 'Open Sans', sans-serif;
-        margin-top: 15%;
-        width: 600px;
+        // font-family: 'Open Sans', sans-serif;
+        // margin-top: 15%;
+        // width: 600px;
 
         h1{
             font-family: 'Quattrocento Sans', sans-serif;
@@ -367,10 +367,10 @@
     }
 
     .slider{
-        font-family: 'Open Sans', sans-serif;
-        margin-top: 20%;
-        width: 600px;
-        height: 550px;
+        // font-family: 'Open Sans', sans-serif;
+        // margin-top: 20%;
+        // width: 600px;
+        // height: 550px;
 
         h1{
             font-family: 'Quattrocento Sans', sans-serif;
@@ -446,7 +446,7 @@
         }
 
         .we-are-modest-right-block:last-child{
-                margin-bottom: 100px;
+                margin-bottom: 80px;
             }
     
         .icons-img{
@@ -547,7 +547,6 @@
 
         .section-lovely-work{
             background-color: rgb(58, 69, 77);
-            height: 1140px;
         }
 
         .section-title-grey-font {
@@ -578,6 +577,7 @@
                 position: absolute;
                 top: 30%;
                 left: 40%;
+                opacity: 0;
             }
 
             .caption{
@@ -596,10 +596,6 @@
                 margin-top: -51px;               
             }
 
-            .img-plus{
-                opacity: 0;
-            }
-        
             .photo{
                 cursor: pointer;
                 position: relative;     
@@ -613,6 +609,11 @@
 
                 &:hover .img-plus{
                     opacity: 1;
+                }
+
+                &:hover {
+                    filter: brightness(90%);
+                    transition: 0.1s all ease-in-out; 
                 }
 
                 .img-photo{
@@ -650,7 +651,7 @@
     }
     
     .section-what-we-do{
-        height: 1400px;
+
     }
 
     .advantage{
@@ -679,7 +680,6 @@
     
     .section-features{
         background-color: rgb(58, 69, 77);
-        height: 1600px;
     }
     .row-features{
         display: flex;
@@ -731,7 +731,134 @@
     .img-features{
         width: 400px;
     }
+    .contact-information{
+        font-family: 'Open Sans', sans-serif;   
+        font-size: 16px;
+        color:rgb(141, 143, 146,);
+        line-height: 1.6;
+        margin-bottom: 200px;
+        
+        .bold{
+            font-weight: bold;
+        }
 
+        h3{
+            text-transform: uppercase;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color:rgb(41, 47, 54,);
+            margin: 50px 0;
+        }
+    }
+
+    .form-message{
+        position: absolute;
+        top: -100px;
+        background-color: white;
+        width: 350px;
+        height: 300px;
+        padding: 35px;
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 14px;
+        color:rgb(141, 143, 146,);
+
+        .name-email{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .name, .email{
+            width: 100%;
+        }
+
+        .your-massage{
+            margin-top: 20px;
+        }
+
+        input{
+            width: 100%;
+            height: 45px;
+            border: 0;
+            background-color: rgb(234, 238, 241,);
+            margin-top: 5px;
+            border-radius: 5px;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 20px;
+            color:rgb(41, 47, 54,);
+            
+
+            &:focus-visible {
+                outline: 0;
+            }
+        }
+
+        textarea{
+            width: 100%;
+            height: 160px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 0;
+            background-color: rgb(234, 238, 241,);
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 20px;
+            color:rgb(41, 47, 54,);
+
+            &:focus-visible {
+                outline: 0;
+            }
+        }
+
+        button{
+            margin-top: 20px;
+            font-family: 'Quattrocento Sans', sans-serif;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            border: 2px solid rgb(35, 183, 164, 0);             
+            margin-right: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(35, 183, 164);
+            cursor: pointer; 
+
+            &:hover{
+                border: 2px solid rgb(35, 183, 164); 
+                background-color: rgb(47, 219, 196); 
+            }
+        } 
+    }
+    .slider-block > div{
+        margin-left:4%;
+        height: 600px;
+        padding: 50px 0;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        
+        img{
+            width: 770px;
+            height: 550px;
+        }
+    
+    }
+    
+    
+    .slick-dots li button:before{
+        font-size: 10px;
+        color: rgb(13, 13, 104);
+       
+    }
+    
+    .slick-prev:before, .slick-next:before {
+        font-size: 40px;
+        opacity: 0.5;
+
+    }
     
 }
 
@@ -879,10 +1006,10 @@
     }
    
     .slider{
-        font-family: 'Open Sans', sans-serif;
-        width: 660px;
-        margin-top: 20%;
-        height: 490px;
+        // font-family: 'Open Sans', sans-serif;
+        // width: 660px;
+        // margin-top: 20%;
+        // height: 490px;
 
         h1{
             font-family: 'Quattrocento Sans', sans-serif;
@@ -1000,9 +1127,7 @@
     }
 
 
-    .section-meet-the-team{
-        height: 600px;
-    }
+    // .section-meet-the-team
     
     .team-name{
         margin-top: -3px;
@@ -1028,6 +1153,7 @@
     .revue{
         position: relative;
         cursor: pointer;
+        margin-bottom:70px;
 
         > img{
             width: 220px;
@@ -1060,7 +1186,6 @@
         
     .section-lovely-work{
         background-color: rgb(58, 69, 77);
-        height: 900px;
     }
 
     .section-title-grey-font {
@@ -1116,7 +1241,7 @@
         .photo{
             cursor: pointer;
             position: relative;     
-            margin-bottom: 30px;         
+            margin-bottom: 80px;         
 
             &:hover .caption{
                 opacity: 1;
@@ -1126,6 +1251,11 @@
 
             &:hover .img-plus{
                 opacity: 1;
+            }
+
+            &:hover {
+                filter: brightness(90%);
+                transition: 0.1s all ease-in-out; 
             }
 
             .img-photo{
@@ -1157,9 +1287,8 @@
         }
     }
 
-    .section-what-we-do{
-        height: 900px;
-    }
+    // .section-what-we-do
+    
 
     .advantage{
         text-align: center;
@@ -1185,7 +1314,6 @@
 
     .section-features{
         background-color: rgb(58, 69, 77);
-        height: 730px;
     }
 
     .section-title-grey-font {
@@ -1224,11 +1352,136 @@
         font-size: 16px;
         color: white;
         line-height: 1.8;
-
+        margin-bottom: 70px;
     }
 
     .img-features{
         width: 290px;
+    }
+
+    .contact-information{
+        font-family: 'Open Sans', sans-serif;   
+        font-size: 16px;
+        color:rgb(141, 143, 146,);
+        line-height: 1.6;
+        margin-bottom: 200px;
+        
+        .bold{
+            font-weight: bold;
+        }
+
+        h3{
+            text-transform: uppercase;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color:rgb(41, 47, 54,);
+            margin: 50px 0;
+        }
+    }
+
+    .form-message{
+        position: absolute;
+        top: -100px;
+        background-color: white;
+        width: 550px;
+        height: 400px;
+        padding: 35px;
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 14px;
+        color:rgb(141, 143, 146,);
+
+        .name-email{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .name, .email{
+            width: 100%;
+        }
+
+        .your-massage{
+            margin-top: 20px;
+        }
+
+        input{
+            width: 100%;
+            height: 45px;
+            border: 0;
+            background-color: rgb(234, 238, 241,);
+            margin-top: 5px;
+            border-radius: 5px;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 20px;
+            color:rgb(41, 47, 54,);
+            
+
+            &:focus-visible {
+                outline: 0;
+            }
+        }
+
+        textarea{
+            width: 100%;
+            height: 160px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 0;
+            background-color: rgb(234, 238, 241,);
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 20px;
+            color:rgb(41, 47, 54,);
+
+            &:focus-visible {
+                outline: 0;
+            }
+        }
+
+        button{
+            margin-top: 20px;
+            font-family: 'Quattrocento Sans', sans-serif;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 5px;
+            border: 2px solid rgb(35, 183, 164, 0);             
+            margin-right: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(35, 183, 164);
+            cursor: pointer; 
+
+            &:hover{
+                border: 2px solid rgb(35, 183, 164); 
+                background-color: rgb(47, 219, 196); 
+            }
+        } 
+    }
+    .slider-block > div{
+        margin-left:7%;
+        height: 600px;
+        padding: 100px 0;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        
+    
+    }
+    
+    
+    .slick-dots li button:before{
+        font-size: 10px;
+        color: rgb(13, 13, 104);
+       
+    }
+    
+    .slick-prev:before, .slick-next:before {
+        font-size: 40px;
+        opacity: 0.5;
+
     }
 }
 
@@ -1386,10 +1639,10 @@
     }
     
     .slider{
-        margin-top: 33%;
-        font-family: 'Open Sans', sans-serif;        
-        width: 660px;
-        height: 490px;
+        // margin-top: 33%;
+        // font-family: 'Open Sans', sans-serif;        
+        // width: 660px;
+        // height: 490px;
 
         h1{
             font-family: 'Quattrocento Sans', sans-serif;
@@ -1427,9 +1680,7 @@
         } 
     }
 
-    .section-meet-the-team{
-        height: 650px;
-    }
+    // .section-meet-the-team
 
     .section-title {
         display: flex;
@@ -1534,6 +1785,7 @@
         .revue{
             position: relative;
             cursor: pointer;
+            margin-bottom: 100px;
 
             > img{
                 width: 263px;
@@ -1563,7 +1815,6 @@
 
         .section-lovely-work{
             background-color: rgb(58, 69, 77);
-            height: 900px;
         }
 
         .section-title-grey-font {
@@ -1619,7 +1870,7 @@
             .photo{
                 cursor: pointer;
                 position: relative;     
-                margin-bottom: 30px;         
+                margin-bottom: 100px;         
 
                 &:hover .caption{
                     opacity: 1;
@@ -1629,6 +1880,11 @@
 
                 &:hover .img-plus{
                     opacity: 1;
+                }
+
+                &:hover {
+                    filter: brightness(90%);
+                    transition: 0.1s all ease-in-out; 
                 }
 
                 .img-photo{
@@ -1661,9 +1917,8 @@
     }
 
 
-    .section-what-we-do{
-        height: 900px;
-    }
+    // .section-what-we-do
+    
 
     .advantage{
         text-align: center;
@@ -1691,7 +1946,6 @@
 
     .section-features{
         background-color: rgb(58, 69, 77);
-        height: 730px;
     }
 
     .section-title-grey-font {
@@ -1730,9 +1984,135 @@
         font-size: 16px;
         color: white;
         line-height: 1.8;
-
+        margin-bottom: 100px;
     }
     
+
+    .contact-information{
+        font-family: 'Open Sans', sans-serif;   
+        font-size: 16px;
+        color:rgb(141, 143, 146,);
+        line-height: 1.6;
+        margin-bottom: 200px;
+        
+        .bold{
+            font-weight: bold;
+        }
+
+        h3{
+            text-transform: uppercase;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color:rgb(41, 47, 54,);
+            margin: 50px 0;
+        }
+    }
+
+    .form-message{
+        position: absolute;
+        top: -100px;
+        background-color: white;
+        width: 550px;
+        height: 400px;
+        padding: 35px;
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 14px;
+        color:rgb(141, 143, 146,);
+
+        .name-email{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .name, .email{
+            width: 100%;
+        }
+
+        .your-massage{
+            margin-top: 20px;
+        }
+
+        input{
+            width: 100%;
+            height: 45px;
+            border: 0;
+            background-color: rgb(234, 238, 241,);
+            margin-top: 5px;
+            border-radius: 5px;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 20px;
+            color:rgb(41, 47, 54,);
+            
+
+            &:focus-visible {
+                outline: 0;
+            }
+        }
+
+        textarea{
+            width: 100%;
+            height: 160px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 0;
+            background-color: rgb(234, 238, 241,);
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 20px;
+            color:rgb(41, 47, 54,);
+
+            &:focus-visible {
+                outline: 0;
+            }
+        }
+
+        button{
+            margin-top: 20px;
+            font-family: 'Quattrocento Sans', sans-serif;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 5px;
+            border: 2px solid rgb(35, 183, 164, 0);             
+            margin-right: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(35, 183, 164);
+            cursor: pointer; 
+
+            &:hover{
+                border: 2px solid rgb(35, 183, 164); 
+                background-color: rgb(47, 219, 196); 
+            }
+        } 
+    }
+
+    .slider-block > div{
+        margin-left:15%;
+        height: 600px;
+        padding: 100px 0;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        
+    
+    }
+    
+    
+    .slick-dots li button:before{
+        font-size: 30px;
+        color: rgb(13, 13, 104);
+       
+    }
+    
+    .slick-prev:before, .slick-next:before {
+        font-size: 60px;
+        opacity: 0.5;
+
+    }
 }
 
 /// * only mobile <767px* / ///////////////////////////////////////////////////////////
@@ -1856,10 +2236,10 @@
     } 
 
     .slider{
-        font-family: 'Open Sans', sans-serif;
-        margin-top: 15%;
-        width: 70%;
-        height: 350px;
+        // font-family: 'Open Sans', sans-serif;
+        // margin-top: 15%;
+        // width: 70%;
+        // height: 350px;
 
         h1{
             font-family: 'Quattrocento Sans', sans-serif;
@@ -1943,7 +2323,11 @@
 
     .item{
         display: flex;
-        margin-bottom: 25px;  
+        margin-bottom: 25px;
+        
+        &:last-child{
+            margin-bottom: 50px;
+        }
     }
 
     .marker{
@@ -2031,7 +2415,6 @@
     }
     .section-lovely-work{
         background-color: rgb(58, 69, 77);
-        height: 1800px;
     }
 
     .section-title-grey-font {
@@ -2108,6 +2491,11 @@
                 opacity: 1;
             }
 
+            &:hover {
+                filter: brightness(90%);
+                transition: 0.1s all ease-in-out; 
+            }
+
             .img-photo{
                 width: 290px;
             
@@ -2137,9 +2525,8 @@
         }
     }
 
-    .section-what-we-do{
-        height: 2300px;
-    }
+    // .section-what-we-do
+    
 
     .advantage{
         text-align: center;
@@ -2166,7 +2553,6 @@
 
     .section-features{
         background-color: rgb(58, 69, 77);
-        height: 1600px;
     }
 
     .row-features{
@@ -2176,9 +2562,7 @@
     }
     
     .section-title-grey-font {
-        display: flex;
-        align-items: center;
-            
+                   
         .marker-tetle-grey-font{
             width: 10px;
             height: 35px;
@@ -2213,5 +2597,138 @@
         line-height: 1.2;
         width: 360px;
         margin-bottom: 60px;
+    }
+
+
+
+    .contact-information{
+        font-family: 'Open Sans', sans-serif;   
+        font-size: 16px;
+        color:rgb(141, 143, 146,);
+        line-height: 1.6;
+        margin-bottom: 50px;
+        
+        .bold{
+            font-weight: bold;
+        }
+
+        h3{
+            text-transform: uppercase;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color:rgb(41, 47, 54,);
+            margin: 50px 0;
+        }
+    }
+
+    .form-message{
+        margin-bottom: 200px;
+       
+        background-color: white;
+        width: 100%;
+        height: 300px;
+        padding: 35px;
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 14px;
+        color:rgb(141, 143, 146,);
+
+        .name-email{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .name, .email{
+            width: 100%;
+        }
+
+        .your-massage{
+            margin-top: 20px;
+        }
+
+        input{
+            width: 100%;
+            height: 45px;
+            border: 0;
+            background-color: rgb(234, 238, 241,);
+            margin-top: 5px;
+            border-radius: 5px;
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 20px;
+            color:rgb(41, 47, 54,);
+            
+
+            &:focus-visible {
+                outline: 0;
+            }
+        }
+
+        textarea{
+            width: 100%;
+            height: 160px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 0;
+            background-color: rgb(234, 238, 241,);
+            font-family: 'Quattrocento Sans', sans-serif;
+            font-size: 20px;
+            color:rgb(41, 47, 54,);
+
+            &:focus-visible {
+                outline: 0;
+            }
+        }
+
+        button{
+            margin-top: 20px;
+            font-family: 'Quattrocento Sans', sans-serif;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            border: 2px solid rgb(35, 183, 164, 0);             
+            margin-right: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(35, 183, 164);
+            cursor: pointer; 
+
+            &:hover{
+                border: 2px solid rgb(35, 183, 164); 
+                background-color: rgb(47, 219, 196); 
+            }
+        } 
+    }
+    
+    .slider-block > div{
+        // margin-left:5%;
+        left: 5%;
+        height: 390px;
+        padding: 90px 0;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+
+        img{
+            width: 350px;
+            height: 250px;
+        }
+        
+    
+    }
+    
+    
+    .slick-dots li button:before{
+        font-size: 10px;
+        color: rgb(13, 13, 104);
+       
+    }
+    
+    .slick-prev:before, .slick-next:before {
+        display: none;
+
     }
 }

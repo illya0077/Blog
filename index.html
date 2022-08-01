@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,14 +49,20 @@
     <main class="main">
        <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-12" >
                     <div class="slider">
-                        <h1>WELCOME TO OUR MARKETPLACE</h1>
+                        <div class="slider-block">
+                            <div><img src="images/1-slider.jpg" alt="" height="500px"></div>
+                            <div><img src="images/2-slider.jpg" alt="" height="500px"></div>
+                            <div><img src="images/3-slider.jpg" alt="" height="500px"></div>
+                        </div>
+
+                        <!-- <h1>WELCOME TO OUR MARKETPLACE</h1>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ...</p>
 
                         <button class="btn-view-more">VIEW MORE</button>
-                        <button class="btn-video-tour">VIDEO TOUR</button>
+                        <button class="btn-video-tour">VIDEO TOUR</button> -->
                     </div>
                 </div>
             </div>
@@ -127,7 +135,7 @@
         <section class="section-meet-the-team"">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="section-title">
                             <div class="marker-tetle"></div>
                             <h2>meet the team.</h2>
@@ -200,7 +208,7 @@
         <section class="section-lovely-work">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="section-title-grey-font">
                             <div class="marker-tetle-grey-font"></div>
                             <h2>lovely work.</h2>
@@ -282,7 +290,7 @@
         <section class="section-what-we-do">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="section-title">
                             <div class="marker-tetle"></div>
                             <h2>what we do.</h2>
@@ -377,7 +385,7 @@
         <section class="section-features">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="section-title-grey-font">
                             <div class="marker-tetle-grey-font"></div>
                             <h2>FEATURES.</h2>
@@ -423,9 +431,66 @@
                     </div>
                 </div>
             </div>
-        </section>             
+        </section>   
+        
+        <section class="section-stay-in-touch"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-title">
+                            <div class="marker-tetle"></div>
+                            <h2>stay in touch.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4452425766667!2d30.525300551885724!3d50.451433095073355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfbac10d04a3%3A0x167c1659a9a45559!2z0J8n0Y_QvdCwINCS0LjRiNC90Y8!5e0!3m2!1suk!2suk!4v1659106013875!5m2!1suk!2suk" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="contact-information">
+                            <h3>contact information</h3>
+                            <div class="text-contact">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida. 
+                                <br>
+                                <br>
+                                Cras fermentum elit quis magna congue, <span class="bold">vel sodales</span>   arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <form class="form-message" action="">
+                            <div class="name-email">
+                                <div class="name">
+                                    Your Name
+                                    <br>
+                                    <input type="Your Name">
+                                </div>
+                                <div class="email">
+                                    Your email
+                                    <br>
+                                    <input type="Your email">
+                                </div>
+                            </div>
+                            <div class="your-massage">
+                                Your message
+                                <br>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <button>SEND MASSAGE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
             
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
 
+        <script src="app.js"></script>
         
     </main>
 

@@ -161,11 +161,6 @@
   background-position: center;
   cursor: pointer;
 }
-.search .slider {
-  font-family: "Open Sans", sans-serif;
-  margin-top: 15%;
-  width: 600px;
-}
 .search .slider h1 {
   font-family: "Quattrocento Sans", sans-serif;
   font-size: 36px;
@@ -361,12 +356,6 @@
     height: 660px;
     width: 100%;
   }
-  .slider {
-    font-family: "Open Sans", sans-serif;
-    margin-top: 20%;
-    width: 600px;
-    height: 550px;
-  }
   .slider h1 {
     font-family: "Quattrocento Sans", sans-serif;
     font-size: 36px;
@@ -426,7 +415,7 @@
     font-weight: bold;
   }
   .we-are-modest-right-block:last-child {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   .icons-img {
     background-color: rgb(208, 213, 217);
@@ -513,7 +502,6 @@
   }
   .section-lovely-work {
     background-color: rgb(58, 69, 77);
-    height: 1140px;
   }
   .section-title-grey-font {
     display: flex;
@@ -538,6 +526,7 @@
     position: absolute;
     top: 30%;
     left: 40%;
+    opacity: 0;
   }
   .section-lovely-work .caption {
     opacity: 0;
@@ -554,9 +543,6 @@
     padding-left: 15px;
     margin-top: -51px;
   }
-  .section-lovely-work .img-plus {
-    opacity: 0;
-  }
   .section-lovely-work .photo {
     cursor: pointer;
     position: relative;
@@ -569,6 +555,10 @@
   }
   .section-lovely-work .photo:hover .img-plus {
     opacity: 1;
+  }
+  .section-lovely-work .photo:hover {
+    filter: brightness(90%);
+    transition: 0.1s all ease-in-out;
   }
   .section-lovely-work .photo .img-photo {
     width: 330px;
@@ -597,9 +587,6 @@
   .btn-show-me-more:hover {
     background-color: rgb(127, 129, 133);
   }
-  .section-what-we-do {
-    height: 1400px;
-  }
   .advantage {
     text-align: center;
     margin-bottom: 40px;
@@ -622,7 +609,6 @@
   }
   .section-features {
     background-color: rgb(58, 69, 77);
-    height: 1600px;
   }
   .row-features {
     display: flex;
@@ -667,6 +653,114 @@
   }
   .img-features {
     width: 400px;
+  }
+  .contact-information {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: rgb(141, 143, 146);
+    line-height: 1.6;
+    margin-bottom: 200px;
+  }
+  .contact-information .bold {
+    font-weight: bold;
+  }
+  .contact-information h3 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(41, 47, 54);
+    margin: 50px 0;
+  }
+  .form-message {
+    position: absolute;
+    top: -100px;
+    background-color: white;
+    width: 350px;
+    height: 300px;
+    padding: 35px;
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 14px;
+    color: rgb(141, 143, 146);
+  }
+  .form-message .name-email {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .form-message .name, .form-message .email {
+    width: 100%;
+  }
+  .form-message .your-massage {
+    margin-top: 20px;
+  }
+  .form-message input {
+    width: 100%;
+    height: 45px;
+    border: 0;
+    background-color: rgb(234, 238, 241);
+    margin-top: 5px;
+    border-radius: 5px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 20px;
+    color: rgb(41, 47, 54);
+  }
+  .form-message input:focus-visible {
+    outline: 0;
+  }
+  .form-message textarea {
+    width: 100%;
+    height: 160px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(234, 238, 241);
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 20px;
+    color: rgb(41, 47, 54);
+  }
+  .form-message textarea:focus-visible {
+    outline: 0;
+  }
+  .form-message button {
+    margin-top: 20px;
+    font-family: "Quattrocento Sans", sans-serif;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgba(35, 183, 164, 0);
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(35, 183, 164);
+    cursor: pointer;
+  }
+  .form-message button:hover {
+    border: 2px solid rgb(35, 183, 164);
+    background-color: rgb(47, 219, 196);
+  }
+  .slider-block > div {
+    margin-left: 4%;
+    height: 600px;
+    padding: 50px 0;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+  }
+  .slider-block > div img {
+    width: 770px;
+    height: 550px;
+  }
+  .slick-dots li button:before {
+    font-size: 10px;
+    color: rgb(13, 13, 104);
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 40px;
+    opacity: 0.5;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -810,12 +904,6 @@
     height: 660px;
     width: 100%;
   }
-  .slider {
-    font-family: "Open Sans", sans-serif;
-    width: 660px;
-    margin-top: 20%;
-    height: 490px;
-  }
   .slider h1 {
     font-family: "Quattrocento Sans", sans-serif;
     font-size: 36px;
@@ -913,9 +1001,6 @@
     color: rgb(41, 47, 54);
     padding-bottom: 10px;
   }
-  .section-meet-the-team {
-    height: 600px;
-  }
   .team-name {
     margin-top: -3px;
     font-family: "Open Sans", sans-serif;
@@ -938,6 +1023,7 @@
   .revue {
     position: relative;
     cursor: pointer;
+    margin-bottom: 70px;
   }
   .revue > img {
     width: 220px;
@@ -961,7 +1047,6 @@
   }
   .section-lovely-work {
     background-color: rgb(58, 69, 77);
-    height: 900px;
   }
   .section-title-grey-font {
     display: flex;
@@ -1008,7 +1093,7 @@
   .section-lovely-work .photo {
     cursor: pointer;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
   }
   .section-lovely-work .photo:hover .caption {
     opacity: 1;
@@ -1017,6 +1102,10 @@
   }
   .section-lovely-work .photo:hover .img-plus {
     opacity: 1;
+  }
+  .section-lovely-work .photo:hover {
+    filter: brightness(90%);
+    transition: 0.1s all ease-in-out;
   }
   .section-lovely-work .photo .img-photo {
     width: 290px;
@@ -1041,9 +1130,6 @@
   .btn-show-me-more:hover {
     background-color: rgb(127, 129, 133);
   }
-  .section-what-we-do {
-    height: 900px;
-  }
   .advantage {
     text-align: center;
     margin-bottom: 80px;
@@ -1064,7 +1150,6 @@
   }
   .section-features {
     background-color: rgb(58, 69, 77);
-    height: 730px;
   }
   .section-title-grey-font {
     display: flex;
@@ -1098,9 +1183,114 @@
     font-size: 16px;
     color: white;
     line-height: 1.8;
+    margin-bottom: 70px;
   }
   .img-features {
     width: 290px;
+  }
+  .contact-information {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: rgb(141, 143, 146);
+    line-height: 1.6;
+    margin-bottom: 200px;
+  }
+  .contact-information .bold {
+    font-weight: bold;
+  }
+  .contact-information h3 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(41, 47, 54);
+    margin: 50px 0;
+  }
+  .form-message {
+    position: absolute;
+    top: -100px;
+    background-color: white;
+    width: 550px;
+    height: 400px;
+    padding: 35px;
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 14px;
+    color: rgb(141, 143, 146);
+  }
+  .form-message .name-email {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .form-message .name, .form-message .email {
+    width: 100%;
+  }
+  .form-message .your-massage {
+    margin-top: 20px;
+  }
+  .form-message input {
+    width: 100%;
+    height: 45px;
+    border: 0;
+    background-color: rgb(234, 238, 241);
+    margin-top: 5px;
+    border-radius: 5px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 20px;
+    color: rgb(41, 47, 54);
+  }
+  .form-message input:focus-visible {
+    outline: 0;
+  }
+  .form-message textarea {
+    width: 100%;
+    height: 160px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(234, 238, 241);
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 20px;
+    color: rgb(41, 47, 54);
+  }
+  .form-message textarea:focus-visible {
+    outline: 0;
+  }
+  .form-message button {
+    margin-top: 20px;
+    font-family: "Quattrocento Sans", sans-serif;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgba(35, 183, 164, 0);
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(35, 183, 164);
+    cursor: pointer;
+  }
+  .form-message button:hover {
+    border: 2px solid rgb(35, 183, 164);
+    background-color: rgb(47, 219, 196);
+  }
+  .slider-block > div {
+    margin-left: 7%;
+    height: 600px;
+    padding: 100px 0;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+  }
+  .slick-dots li button:before {
+    font-size: 10px;
+    color: rgb(13, 13, 104);
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 40px;
+    opacity: 0.5;
   }
 }
 @media (min-width: 1200px) {
@@ -1248,12 +1438,6 @@
     height: 660px;
     width: 100%;
   }
-  .slider {
-    margin-top: 33%;
-    font-family: "Open Sans", sans-serif;
-    width: 660px;
-    height: 490px;
-  }
   .slider h1 {
     font-family: "Quattrocento Sans", sans-serif;
     font-size: 36px;
@@ -1282,9 +1466,6 @@
   .slider .btn-view-more:hover, .slider .btn-video-tour:hover {
     border: 2px solid white;
     background-color: rgba(35, 183, 164, 0);
-  }
-  .section-meet-the-team {
-    height: 650px;
   }
   .section-title {
     display: flex;
@@ -1376,6 +1557,7 @@
   .revue {
     position: relative;
     cursor: pointer;
+    margin-bottom: 100px;
   }
   .revue > img {
     width: 263px;
@@ -1399,7 +1581,6 @@
   }
   .section-lovely-work {
     background-color: rgb(58, 69, 77);
-    height: 900px;
   }
   .section-title-grey-font {
     display: flex;
@@ -1446,7 +1627,7 @@
   .section-lovely-work .photo {
     cursor: pointer;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
   }
   .section-lovely-work .photo:hover .caption {
     opacity: 1;
@@ -1455,6 +1636,10 @@
   }
   .section-lovely-work .photo:hover .img-plus {
     opacity: 1;
+  }
+  .section-lovely-work .photo:hover {
+    filter: brightness(90%);
+    transition: 0.1s all ease-in-out;
   }
   .section-lovely-work .photo .img-photo {
     width: 360px;
@@ -1479,9 +1664,6 @@
   .btn-show-me-more:hover {
     background-color: rgb(127, 129, 133);
   }
-  .section-what-we-do {
-    height: 900px;
-  }
   .advantage {
     text-align: center;
     margin-bottom: 80px;
@@ -1502,7 +1684,6 @@
   }
   .section-features {
     background-color: rgb(58, 69, 77);
-    height: 730px;
   }
   .section-title-grey-font {
     display: flex;
@@ -1536,6 +1717,111 @@
     font-size: 16px;
     color: white;
     line-height: 1.8;
+    margin-bottom: 100px;
+  }
+  .contact-information {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: rgb(141, 143, 146);
+    line-height: 1.6;
+    margin-bottom: 200px;
+  }
+  .contact-information .bold {
+    font-weight: bold;
+  }
+  .contact-information h3 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(41, 47, 54);
+    margin: 50px 0;
+  }
+  .form-message {
+    position: absolute;
+    top: -100px;
+    background-color: white;
+    width: 550px;
+    height: 400px;
+    padding: 35px;
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 14px;
+    color: rgb(141, 143, 146);
+  }
+  .form-message .name-email {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .form-message .name, .form-message .email {
+    width: 100%;
+  }
+  .form-message .your-massage {
+    margin-top: 20px;
+  }
+  .form-message input {
+    width: 100%;
+    height: 45px;
+    border: 0;
+    background-color: rgb(234, 238, 241);
+    margin-top: 5px;
+    border-radius: 5px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 20px;
+    color: rgb(41, 47, 54);
+  }
+  .form-message input:focus-visible {
+    outline: 0;
+  }
+  .form-message textarea {
+    width: 100%;
+    height: 160px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(234, 238, 241);
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 20px;
+    color: rgb(41, 47, 54);
+  }
+  .form-message textarea:focus-visible {
+    outline: 0;
+  }
+  .form-message button {
+    margin-top: 20px;
+    font-family: "Quattrocento Sans", sans-serif;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    border: 2px solid rgba(35, 183, 164, 0);
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(35, 183, 164);
+    cursor: pointer;
+  }
+  .form-message button:hover {
+    border: 2px solid rgb(35, 183, 164);
+    background-color: rgb(47, 219, 196);
+  }
+  .slider-block > div {
+    margin-left: 15%;
+    height: 600px;
+    padding: 100px 0;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+  }
+  .slick-dots li button:before {
+    font-size: 30px;
+    color: rgb(13, 13, 104);
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 60px;
+    opacity: 0.5;
   }
 }
 @media (min-width: 0px) and (max-width: 767px) {
@@ -1647,12 +1933,6 @@
     height: 660px;
     width: 100%;
   }
-  .slider {
-    font-family: "Open Sans", sans-serif;
-    margin-top: 15%;
-    width: 70%;
-    height: 350px;
-  }
   .slider h1 {
     font-family: "Quattrocento Sans", sans-serif;
     font-size: 18px;
@@ -1724,6 +2004,9 @@
   .item {
     display: flex;
     margin-bottom: 25px;
+  }
+  .item:last-child {
+    margin-bottom: 50px;
   }
   .marker {
     height: 40px;
@@ -1797,7 +2080,6 @@
   }
   .section-lovely-work {
     background-color: rgb(58, 69, 77);
-    height: 1800px;
   }
   .section-title-grey-font {
     display: flex;
@@ -1861,6 +2143,10 @@
   .section-lovely-work .photo:hover .img-plus {
     opacity: 1;
   }
+  .section-lovely-work .photo:hover {
+    filter: brightness(90%);
+    transition: 0.1s all ease-in-out;
+  }
   .section-lovely-work .photo .img-photo {
     width: 290px;
   }
@@ -1884,9 +2170,6 @@
   .btn-show-me-more:hover {
     background-color: rgb(127, 129, 133);
   }
-  .section-what-we-do {
-    height: 2300px;
-  }
   .advantage {
     text-align: center;
   }
@@ -1908,16 +2191,11 @@
   }
   .section-features {
     background-color: rgb(58, 69, 77);
-    height: 1600px;
   }
   .row-features {
     display: flex;
     flex-direction: column;
     align-content: center;
-  }
-  .section-title-grey-font {
-    display: flex;
-    align-items: center;
   }
   .section-title-grey-font .marker-tetle-grey-font {
     width: 10px;
@@ -1949,5 +2227,111 @@
     line-height: 1.2;
     width: 360px;
     margin-bottom: 60px;
+  }
+  .contact-information {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: rgb(141, 143, 146);
+    line-height: 1.6;
+    margin-bottom: 50px;
+  }
+  .contact-information .bold {
+    font-weight: bold;
+  }
+  .contact-information h3 {
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(41, 47, 54);
+    margin: 50px 0;
+  }
+  .form-message {
+    margin-bottom: 200px;
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    padding: 35px;
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 14px;
+    color: rgb(141, 143, 146);
+  }
+  .form-message .name-email {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .form-message .name, .form-message .email {
+    width: 100%;
+  }
+  .form-message .your-massage {
+    margin-top: 20px;
+  }
+  .form-message input {
+    width: 100%;
+    height: 45px;
+    border: 0;
+    background-color: rgb(234, 238, 241);
+    margin-top: 5px;
+    border-radius: 5px;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 20px;
+    color: rgb(41, 47, 54);
+  }
+  .form-message input:focus-visible {
+    outline: 0;
+  }
+  .form-message textarea {
+    width: 100%;
+    height: 160px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(234, 238, 241);
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 20px;
+    color: rgb(41, 47, 54);
+  }
+  .form-message textarea:focus-visible {
+    outline: 0;
+  }
+  .form-message button {
+    margin-top: 20px;
+    font-family: "Quattrocento Sans", sans-serif;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgba(35, 183, 164, 0);
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(35, 183, 164);
+    cursor: pointer;
+  }
+  .form-message button:hover {
+    border: 2px solid rgb(35, 183, 164);
+    background-color: rgb(47, 219, 196);
+  }
+  .slider-block > div {
+    left: 5%;
+    height: 390px;
+    padding: 90px 0;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+  }
+  .slider-block > div img {
+    width: 350px;
+    height: 250px;
+  }
+  .slick-dots li button:before {
+    font-size: 10px;
+    color: rgb(13, 13, 104);
+  }
+  .slick-prev:before, .slick-next:before {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
